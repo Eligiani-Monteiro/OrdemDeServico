@@ -1,0 +1,23 @@
+INSERT INTO TB_TECNICO (nome, telefone, email, senha) VALUES ('Marcos Rogerio', '86876876', 'marcos@gmail.com', '1234');
+INSERT INTO TB_TECNICO (nome, telefone, email, senha) VALUES ('Bruno Mazeo', '86876876', 'bruno@gmail.com', '1234');
+INSERT INTO TB_TECNICO (nome, telefone, email, senha) VALUES ('Claudia Raia', '86876876', 'claudia@gmail.com', '1234');
+INSERT INTO TB_SETOR (sigla, nome, email, telefone, coordenador) VALUES ('TI', 'Celso','celso@gmail.com', '758473757', 'Marcelo');
+INSERT INTO TB_SETOR (sigla, nome, email, telefone, coordenador) VALUES ('TI', 'Pedro','pedro@gmail.com', '893878918', 'Marcelo');
+INSERT INTO TB_SETOR (sigla, nome, email, telefone, coordenador) VALUES ('TI', 'Tabata','tabata@gmail.com', '984631764', 'Marcelo');
+INSERT INTO TB_SETOR (sigla, nome, email, telefone, coordenador) VALUES ('ADM', 'Mariana','mariana@gmail.com', '147677617', 'Maria');
+INSERT INTO TB_SETOR (sigla, nome, email, telefone, coordenador) VALUES ('ADM', 'Mateus','mateus@gmail.com', '25723798', 'Maria');
+INSERT INTO TB_SETOR (sigla, nome, email, telefone, coordenador) VALUES ('FIN', 'Debora','debora@gmail.com', '128613652', 'Marta');
+INSERT INTO TB_SETOR (sigla, nome, email, telefone, coordenador) VALUES ('CON', 'Eduardo','eduardo@gmail.com', '82784199', 'Omar');
+INSERT INTO TB_SETOR (sigla, nome, email, telefone, coordenador) VALUES ('JUR', 'Mauricio','mauricio@gmail.com', '9027878527', 'Ana');
+INSERT INTO TB_SETOR (sigla, nome, email, telefone, coordenador) VALUES ('PROD', 'Amanda','amada@gmail.com', '28578575', 'Beatriz');
+INSERT INTO TB_SETOR (sigla, nome, email, telefone, coordenador) VALUES ('RP', 'Gustavo','gustavo@gmail.com', '89125782', 'Júlia');
+INSERT INTO TB_ORDEM_DE_SERVICO (descricao_problema, descricao_solucao, data_cadastro, status, prioridade, id_tecnico_fk) VALUES ('pc não liga', 'kuhik', '2019-05-25', 3, 2, 1);
+INSERT INTO TB_ORDEM_DE_SERVICO (descricao_problema, descricao_solucao, data_cadastro, status, prioridade, id_tecnico_fk) VALUES ('impressora não faz impressão', '""', '2019-06-19', 1, 3, 3);
+INSERT INTO TB_ORDEM_DE_SERVICO (descricao_problema, descricao_solucao, data_cadastro, status, prioridade, id_tecnico_fk) VALUES ('tela não  liga', '""', '2019-04-25', 1, 2, 2);   
+INSERT INTO TB_EQUIPAMENTO (equipamento, patrimonio, id_setor_fk) VALUES ('Computador', '24154', 3);
+INSERT INTO TB_EQUIPAMENTO (equipamento, patrimonio, id_setor_fk) VALUES ('Impressora', '222', 2);
+INSERT INTO TB_EQUIPAMENTO (equipamento, patrimonio, id_setor_fk) VALUES ('celular', '233', 1 );
+INSERT INTO TB_EQUIPAMENTO_SERVICO (id_ordem, id_equipamento) VALUES (1, 1);
+INSERT INTO TB_EQUIPAMENTO_SERVICO (id_ordem, id_equipamento) VALUES (2, 2);
+INSERT INTO TB_EQUIPAMENTO_SERVICO (id_ordem, id_equipamento) VALUES (3, 3);
+
